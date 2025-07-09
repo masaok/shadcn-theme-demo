@@ -71,6 +71,23 @@ export default function Home() {
               <Button className="w-full" variant="outline">
                 Outline Button
               </Button>
+              
+              {/* Custom color overrides */}
+              <Button className="w-full btn-success">
+                Success Button
+              </Button>
+              <Button className="w-full bg-[#f59e0b] text-white hover:bg-[#d97706]">
+                Warning Button (Tailwind)
+              </Button>
+              <Button 
+                className="w-full"
+                style={{
+                  backgroundColor: '#8b5cf6',
+                  color: '#ffffff'
+                }}
+              >
+                Purple Button (Inline)
+              </Button>
             </CardContent>
           </Card>
         </div>
@@ -133,6 +150,66 @@ export default function Home() {
                 <code className="text-sm">
                   Edit typography in: src/app/themes/typography.css
                 </code>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="mt-8 space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Component-Level Color Overrides</CardTitle>
+              <CardDescription>
+                Different methods to override colors at component level
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              {/* Method 1: CSS Classes */}
+              <div>
+                <h4 className="text-heading-small font-medium mb-3">1. Custom CSS Classes</h4>
+                <div className="space-y-2">
+                  <div className="card-success p-4 rounded-lg border">
+                    <p className="font-medium">Success Card</p>
+                    <p className="text-sm">Using .card-success class</p>
+                  </div>
+                  <div className="card-warning p-4 rounded-lg border">
+                    <p className="font-medium">Warning Card</p>
+                    <p className="text-sm">Using .card-warning class</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Method 2: CSS Variables Override */}
+              <div>
+                <h4 className="text-heading-small font-medium mb-3">2. CSS Variables Override</h4>
+                <div 
+                  className="p-4 rounded-lg border"
+                  style={{
+                    '--primary': '#10b981',
+                    '--primary-foreground': '#ffffff',
+                    '--secondary': '#f0fdf4',
+                    '--secondary-foreground': '#166534'
+                  } as React.CSSProperties}
+                >
+                  <p className="font-medium mb-2">Theme Override Container</p>
+                  <div className="space-y-2">
+                    <Button size="sm" className="mr-2">Green Primary</Button>
+                    <Button size="sm" variant="secondary">Green Secondary</Button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Method 3: Tailwind Arbitrary Values */}
+              <div>
+                <h4 className="text-heading-small font-medium mb-3">3. Tailwind Arbitrary Values</h4>
+                <div className="space-y-2">
+                  <div className="bg-[#3b82f6] text-white p-3 rounded-lg">
+                    <p className="font-medium">Blue background: bg-[#3b82f6]</p>
+                  </div>
+                  <div className="bg-[#f59e0b] text-white p-3 rounded-lg">
+                    <p className="font-medium">Orange background: bg-[#f59e0b]</p>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>

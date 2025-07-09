@@ -6,6 +6,7 @@
 @import './themes/light.css';
 @import './themes/dark.css';
 @import './themes/typography.css';
+@import './themes/custom-overrides.css';
 
 @layer base {
   * {

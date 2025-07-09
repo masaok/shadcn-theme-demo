@@ -1,0 +1,104 @@
+/* Component-Level Color Overrides */
+
+/* Custom button variants */
+.btn-success {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.btn-success:hover {
+  background-color: #059669;
+}
+
+.btn-warning {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.btn-warning:hover {
+  background-color: #d97706;
+}
+
+.btn-info {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.btn-info:hover {
+  background-color: #2563eb;
+}
+
+/* Custom card variants */
+.card-success {
+  background-color: #f0fdf4;
+  border-color: #22c55e;
+  color: #166534;
+}
+
+.card-warning {
+  background-color: #fffbeb;
+  border-color: #f59e0b;
+  color: #92400e;
+}
+
+.card-error {
+  background-color: #fef2f2;
+  border-color: #ef4444;
+  color: #991b1b;
+}
+
+/* Brand-specific overrides */
+.brand-primary {
+  --primary: #6366f1;
+  --primary-foreground: #ffffff;
+}
+
+.brand-secondary {
+  --secondary: #ec4899;
+  --secondary-foreground: #ffffff;
+}
+
+/* Theme-specific overrides */
+.theme-ocean {
+  --primary: #0ea5e9;
+  --secondary: #e0f2fe;
+  --accent: #bae6fd;
+  --background: #f8fafc;
+}
+
+.theme-forest {
+  --primary: #059669;
+  --secondary: #f0fdf4;
+  --accent: #dcfce7;
+  --background: #f9fafb;
+}
+
+/* Element-specific overrides */
+.highlight-box {
+  background-color: #fef3c7;
+  border: 2px solid #f59e0b;
+  color: #92400e;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.danger-text {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.success-text {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+/* Conditional overrides */
+.dark .custom-light-only {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+.light .custom-dark-only {
+  background-color: #f9fafb;
+  color: #1f2937;
+}
