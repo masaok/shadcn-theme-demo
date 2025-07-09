@@ -5,6 +5,7 @@
 /* Import theme files */
 @import './themes/light.css';
 @import './themes/dark.css';
+@import './themes/typography.css';
 
 @layer base {
   * {

@@ -1,67 +1,71 @@
 /* Example: Custom Blue Theme Colors */
-/* Replace the values in src/app/globals.css with these for a blue theme */
+/* Replace the values in theme files with these for a blue theme */
 
-@layer base {
-  :root {
-    /* Light theme - Blue accents */
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 221 83% 53%;        /* Blue primary */
-    --primary-foreground: 0 0% 98%;
-    --secondary: 221 25% 95%;      /* Light blue secondary */
-    --secondary-foreground: 221 83% 20%;
-    --muted: 221 25% 95%;
-    --muted-foreground: 221 10% 46%;
-    --accent: 221 45% 85%;         /* Blue accent */
-    --accent-foreground: 221 83% 20%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 221 25% 90%;
-    --input: 221 25% 90%;
-    --ring: 221 83% 53%;
-    --radius: 0.5rem;
-  }
+/* Light theme - Blue accents */
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --primary: #3b82f6;            /* Blue primary */
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;          /* Light blue secondary */
+  --secondary-foreground: #1e40af;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #dbeafe;             /* Blue accent */
+  --accent-foreground: #1e40af;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #3b82f6;
+  --radius: 0.5rem;
+}
 
-  .dark {
-    /* Dark theme - Blue accents */
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 221 83% 65%;         /* Brighter blue for dark mode */
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 221 25% 15%;       /* Dark blue secondary */
-    --secondary-foreground: 0 0% 98%;
-    --muted: 221 25% 15%;
-    --muted-foreground: 221 25% 65%;
-    --accent: 221 45% 25%;          /* Dark blue accent */
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 221 25% 15%;
-    --input: 221 25% 15%;
-    --ring: 221 83% 65%;
-  }
+/* Dark theme - Blue accents */
+.dark {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --card: #0f172a;
+  --card-foreground: #f8fafc;
+  --popover: #0f172a;
+  --popover-foreground: #f8fafc;
+  --primary: #60a5fa;            /* Brighter blue for dark mode */
+  --primary-foreground: #1e293b;
+  --secondary: #1e3a8a;          /* Dark blue secondary */
+  --secondary-foreground: #f8fafc;
+  --muted: #1e3a8a;
+  --muted-foreground: #94a3b8;
+  --accent: #1e40af;             /* Dark blue accent */
+  --accent-foreground: #f8fafc;
+  --destructive: #dc2626;
+  --destructive-foreground: #f8fafc;
+  --border: #1e3a8a;
+  --input: #1e3a8a;
+  --ring: #60a5fa;
 }
 
 /* Example: Custom Green Theme Colors */
-/* :root {
-  --primary: 142 76% 36%;          // Green primary
-  --primary-foreground: 0 0% 98%;
-  --secondary: 142 30% 95%;        // Light green secondary
-  --accent: 142 50% 85%;           // Green accent
-} */
+/* Light theme */
+/*
+:root {
+  --primary: #10b981;          // Green primary
+  --primary-foreground: #ffffff;
+  --secondary: #f0fdf4;        // Light green secondary
+  --accent: #dcfce7;           // Green accent
+}
+*/
 
 /* Example: Custom Purple Theme Colors */
-/* :root {
-  --primary: 263 70% 50%;          // Purple primary
-  --primary-foreground: 0 0% 98%;
-  --secondary: 263 25% 95%;        // Light purple secondary
-  --accent: 263 45% 85%;           // Purple accent
-} */
+/* Light theme */
+/*
+:root {
+  --primary: #8b5cf6;          // Purple primary
+  --primary-foreground: #ffffff;
+  --secondary: #faf5ff;        // Light purple secondary
+  --accent: #ede9fe;           // Purple accent
+}
+*/

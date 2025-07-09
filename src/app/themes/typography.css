@@ -1,0 +1,85 @@
+/* Typography Variables */
+:root {
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;      /* 12px */
+  --font-size-sm: 0.875rem;     /* 14px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-lg: 1.125rem;     /* 18px */
+  --font-size-xl: 1.25rem;      /* 20px */
+  --font-size-2xl: 1.5rem;      /* 24px */
+  --font-size-3xl: 1.875rem;    /* 30px */
+  --font-size-4xl: 2.25rem;     /* 36px */
+  --font-size-5xl: 3rem;        /* 48px */
+  --font-size-6xl: 3.75rem;     /* 60px */
+  --font-size-7xl: 4.5rem;      /* 72px */
+  --font-size-8xl: 6rem;        /* 96px */
+  --font-size-9xl: 8rem;        /* 128px */
+
+  /* Line Heights */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+
+  /* Font Weights */
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* Semantic Typography Scales */
+  --font-size-caption: var(--font-size-xs);
+  --font-size-body-small: var(--font-size-sm);
+  --font-size-body: var(--font-size-base);
+  --font-size-body-large: var(--font-size-lg);
+  --font-size-heading-small: var(--font-size-xl);
+  --font-size-heading-medium: var(--font-size-2xl);
+  --font-size-heading-large: var(--font-size-3xl);
+  --font-size-heading-xlarge: var(--font-size-4xl);
+  --font-size-display-small: var(--font-size-5xl);
+  --font-size-display-medium: var(--font-size-6xl);
+  --font-size-display-large: var(--font-size-7xl);
+  --font-size-display-xlarge: var(--font-size-8xl);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  :root {
+    /* Mobile scaling */
+    --font-size-3xl: 1.5rem;      /* 24px instead of 30px */
+    --font-size-4xl: 1.875rem;    /* 30px instead of 36px */
+    --font-size-5xl: 2.25rem;     /* 36px instead of 48px */
+    --font-size-6xl: 3rem;        /* 48px instead of 60px */
+    --font-size-7xl: 3.75rem;     /* 60px instead of 72px */
+    --font-size-8xl: 4.5rem;      /* 72px instead of 96px */
+  }
+}
+
+/* Utility Classes */
+.text-caption { font-size: var(--font-size-caption); }
+.text-body-small { font-size: var(--font-size-body-small); }
+.text-body { font-size: var(--font-size-body); }
+.text-body-large { font-size: var(--font-size-body-large); }
+.text-heading-small { font-size: var(--font-size-heading-small); }
+.text-heading-medium { font-size: var(--font-size-heading-medium); }
+.text-heading-large { font-size: var(--font-size-heading-large); }
+.text-heading-xlarge { font-size: var(--font-size-heading-xlarge); }
+.text-display-small { font-size: var(--font-size-display-small); }
+.text-display-medium { font-size: var(--font-size-display-medium); }
+.text-display-large { font-size: var(--font-size-display-large); }
+.text-display-xlarge { font-size: var(--font-size-display-xlarge); }

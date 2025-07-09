@@ -20,10 +20,10 @@ Edit `src/app/themes/light.css` to customize light theme colors:
 ```css
 /* Light Theme Colors */
 :root {
-  --background: 0 0% 100%;           /* White background */
-  --foreground: 240 10% 3.9%;        /* Dark text */
-  --primary: 240 9% 9%;              /* Primary button color */
-  --secondary: 240 4.8% 95.9%;       /* Secondary elements */
+  --background: #ffffff;             /* White background */
+  --foreground: #0f172a;             /* Dark text */
+  --primary: #1e293b;                /* Primary button color */
+  --secondary: #f1f5f9;              /* Secondary elements */
   /* ... other color variables */
 }
 ```
@@ -34,19 +34,20 @@ Edit `src/app/themes/dark.css` to customize dark theme colors:
 ```css
 /* Dark Theme Colors */
 .dark {
-  --background: 240 10% 3.9%;        /* Dark background */
-  --foreground: 0 0% 98%;            /* Light text */
-  --primary: 0 0% 98%;               /* Primary button color */
-  --secondary: 240 3.7% 15.9%;       /* Secondary elements */
+  --background: #0f172a;             /* Dark background */
+  --foreground: #f8fafc;             /* Light text */
+  --primary: #f8fafc;                /* Primary button color */
+  --secondary: #1e293b;              /* Secondary elements */
   /* ... other color variables */
 }
 ```
 
 ## Color Format
 
-Colors use HSL (Hue, Saturation, Lightness) format without the `hsl()` wrapper:
-- Format: `hue saturation% lightness%`
-- Example: `--primary: 221 83% 53%` = `hsl(221, 83%, 53%)`
+Colors use standard hex format:
+- Format: `#RRGGBB`
+- Example: `--primary: #3b82f6` (blue color)
+- Also supports: `#RGB` shorthand (e.g., `#fff` for white)
 
 ## Available Color Variables
 
@@ -78,16 +79,16 @@ Colors use HSL (Hue, Saturation, Lightness) format without the `hsl()` wrapper:
 ```css
 /* Light theme */
 :root {
-  --primary: 221 83% 53%;      /* Blue */
-  --secondary: 221 25% 95%;    /* Light blue */
-  --accent: 221 45% 85%;       /* Blue accent */
+  --primary: #3b82f6;          /* Blue */
+  --secondary: #f1f5f9;        /* Light blue */
+  --accent: #dbeafe;           /* Blue accent */
 }
 
 /* Dark theme */
 .dark {
-  --primary: 221 83% 65%;      /* Brighter blue for dark mode */
-  --secondary: 221 25% 15%;    /* Dark blue */
-  --accent: 221 45% 25%;       /* Dark blue accent */
+  --primary: #60a5fa;          /* Brighter blue for dark mode */
+  --secondary: #1e3a8a;        /* Dark blue */
+  --accent: #1e40af;           /* Dark blue accent */
 }
 ```
 
@@ -95,16 +96,16 @@ Colors use HSL (Hue, Saturation, Lightness) format without the `hsl()` wrapper:
 ```css
 /* Light theme */
 :root {
-  --primary: 142 76% 36%;      /* Green */
-  --secondary: 142 30% 95%;    /* Light green */
-  --accent: 142 50% 85%;       /* Green accent */
+  --primary: #10b981;          /* Green */
+  --secondary: #f0fdf4;        /* Light green */
+  --accent: #dcfce7;           /* Green accent */
 }
 
 /* Dark theme */
 .dark {
-  --primary: 142 76% 50%;      /* Brighter green for dark mode */
-  --secondary: 142 30% 15%;    /* Dark green */
-  --accent: 142 50% 25%;       /* Dark green accent */
+  --primary: #34d399;          /* Brighter green for dark mode */
+  --secondary: #064e3b;        /* Dark green */
+  --accent: #065f46;           /* Dark green accent */
 }
 ```
 

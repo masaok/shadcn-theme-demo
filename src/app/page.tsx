@@ -8,11 +8,11 @@ export default function Home() {
       <div className="container max-w-4xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="text-4xl font-bold text-foreground mb-2">
+            <h1 className="text-heading-large font-bold text-foreground mb-2">
               ShadCN Theme Demo
             </h1>
-            <p className="text-muted-foreground">
-              Demonstrating light and dark themes with next-themes
+            <p className="text-body text-muted-foreground">
+              Demonstrating light and dark themes with centralized typography
             </p>
           </div>
           <ThemeToggle />
@@ -110,8 +110,36 @@ export default function Home() {
           </Card>
         </div>
 
+        <div className="mt-8 space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Typography System</CardTitle>
+              <CardDescription>
+                Centralized font sizes using CSS variables and semantic naming
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-2">
+                <p className="text-display-small font-bold">Display Large</p>
+                <p className="text-heading-large font-bold">Heading Large</p>
+                <p className="text-heading-medium font-semibold">Heading Medium</p>
+                <p className="text-heading-small font-medium">Heading Small</p>
+                <p className="text-body-large">Body Large Text</p>
+                <p className="text-body">Regular Body Text</p>
+                <p className="text-body-small">Small Body Text</p>
+                <p className="text-caption text-muted-foreground">Caption Text</p>
+              </div>
+              <div className="mt-4 p-4 bg-secondary rounded-lg">
+                <code className="text-sm">
+                  Edit typography in: src/app/themes/typography.css
+                </code>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
         <div className="mt-8 text-center text-muted-foreground">
-          <p>
+          <p className="text-body">
             Toggle the theme using the button in the top-right corner.
             Your preference will be remembered across page reloads.
           </p>
