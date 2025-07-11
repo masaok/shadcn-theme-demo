@@ -215,6 +215,103 @@ export default function Home() {
           </Card>
         </div>
 
+        <div className="mt-8 space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Google Font Example: M PLUS Rounded 1c</CardTitle>
+              <CardDescription>
+                Demonstrating custom Google font usage with variable font weights
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-3">
+                <p className="font-[family-name:var(--font-m-plus-rounded)] font-light text-2xl">
+                  Light (300): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-m-plus-rounded)] font-normal text-2xl">
+                  Regular (400): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-m-plus-rounded)] font-medium text-2xl">
+                  Medium (500): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-m-plus-rounded)] font-bold text-2xl">
+                  Bold (700): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-m-plus-rounded)] font-extrabold text-2xl">
+                  Extra Bold (800): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-m-plus-rounded)] font-black text-2xl">
+                  Black (900): The quick brown fox jumps over the lazy dog
+                </p>
+              </div>
+              <div className="mt-6 p-4 bg-secondary rounded-lg">
+                <p className="text-sm mb-2 font-medium">Usage:</p>
+                <code className="text-sm block">
+                  className={"font-[family-name:var(--font-m-plus-rounded)] font-bold"}
+                </code>
+              </div>
+              <div className="mt-4">
+                <Button className="font-[family-name:var(--font-m-plus-rounded)] font-bold">
+                  Button with M PLUS Rounded
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="mt-8 space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Google Font Example: Nunito</CardTitle>
+              <CardDescription>
+                Another custom Google font with extensive weight range (200-900)
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-3">
+                <p className="font-[family-name:var(--font-nunito)] font-extralight text-xl">
+                  Extra Light (200): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-nunito)] font-light text-xl">
+                  Light (300): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-nunito)] font-normal text-xl">
+                  Regular (400): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-nunito)] font-medium text-xl">
+                  Medium (500): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-nunito)] font-semibold text-xl">
+                  Semi Bold (600): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-nunito)] font-bold text-xl">
+                  Bold (700): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-nunito)] font-extrabold text-xl">
+                  Extra Bold (800): The quick brown fox jumps over the lazy dog
+                </p>
+                <p className="font-[family-name:var(--font-nunito)] font-black text-xl">
+                  Black (900): The quick brown fox jumps over the lazy dog
+                </p>
+              </div>
+              <div className="mt-6 p-4 bg-secondary rounded-lg">
+                <p className="text-sm mb-2 font-medium">Usage:</p>
+                <code className="text-sm block">
+                  {"className=\"font-[family-name:var(--font-nunito)] font-semibold\""}
+                </code>
+              </div>
+              <div className="mt-4 space-x-2">
+                <Button className="font-[family-name:var(--font-nunito)] font-semibold">
+                  Nunito Button
+                </Button>
+                <Button variant="outline" className="font-[family-name:var(--font-nunito)] font-bold">
+                  Nunito Outline
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
         <div className="mt-8 text-center text-muted-foreground">
           <p className="text-body">
             Toggle the theme using the button in the top-right corner.
